@@ -26,4 +26,12 @@ public class ImageModel {
     public void setImage(BufferedImage image) {
         this.image = image;
     }
+
+    @Override
+    public String toString() {
+        return "ImageModel{" +
+                "id='" + id + '\'' +
+                ", image=" + image +
+                '}';
+    }
 }
