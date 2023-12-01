@@ -10,7 +10,7 @@ The goal of this project is to create an application for remote image editing us
      - Saves the image in the application's memory.
      - Returns a unique identifier.
   2.DELETE /image/{id}
-     -Deletes the image with the given identifier {id} from the application's memory.
+     - Deletes the image with the given identifier {id} from the application's memory.
   3. GET /image/{id}/size
      -Returns data in JSON format with the dimensions of the loaded image.
   4. GET /image/{id}/histogram
