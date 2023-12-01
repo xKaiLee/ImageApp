@@ -1,4 +1,3 @@
-## IN PROGRESS
 # Image Editing App with Spring Boot
 
 # Project Goal
