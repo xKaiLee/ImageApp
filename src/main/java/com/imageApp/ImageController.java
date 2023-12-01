@@ -27,18 +27,18 @@ public class ImageController {
             BufferedImage bufferedImage = ImageIO.read(new ByteArrayInputStream(imageData));
             long id = generateUniqueId();
             imageMap.put(id, new ImageModel(String.valueOf(id), bufferedImage));
-            System.out.println("You did it");
+            //System.out.println("You did it");
             return ResponseEntity.ok(id);
         } catch (IOException e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(-1L);
         }
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/image/{id}/delete")
     public ResponseEntity<Void> deleteImage(@PathVariable Long id) {
         if (imageMap.containsKey(id)) {
             imageMap.remove(id);
-            System.out.println("Usunales obraz");
+            System.out.println("You removed your image");
             return ResponseEntity.ok().build();
 
         } else {
