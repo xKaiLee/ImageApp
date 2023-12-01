@@ -17,4 +17,3 @@ The goal of this project is to create an application for remote image editing us
      - Returns data in JSON format containing the histogram of the image.
   5. GET /image/{id}/crop
       - Returns a cropped image.
-      - Parameters for the cropped fragment (start, stop, width, height) should be passed to the route.
